@@ -192,9 +192,6 @@ header {
 .lang-section .lang-word:hover{
     color: #7e2729;
 }
-.menu-bars{
-    display: none;
-}
 .navgition .lang-section{
     display: none;
 }
@@ -335,7 +332,7 @@ html[dir=rtl] .swiper-btn.swiper-btn-prev {
 /*                          main-slider                             */
 /*                           category-section                        */
 .category-section {
-    margin-bottom: 45px;
+    margin-bottom: 100px;
 }
 .category-cont {
     display: grid;
@@ -350,7 +347,7 @@ html[dir=rtl] .swiper-btn.swiper-btn-prev {
     color: #7e2729;
     text-decoration: none;
     font-weight: 500;
-    font-size: 19px;
+    font-size: 16px;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -367,7 +364,7 @@ html[dir=rtl] .swiper-btn.swiper-btn-prev {
     overflow: hidden;
     padding-top: 88%;
     position: relative;
-    margin-bottom: 15px;
+    margin-bottom: 2px;
     width: 100%;
 }
 .category-img img{
@@ -456,6 +453,7 @@ html[dir=rtl] .about-title{
 .about-box .about-pargh{
     color: #616161;
     font-size: 16px;
+    line-height: 2;
     font-weight: 300;
     margin-bottom: 30px;
 }
@@ -496,7 +494,7 @@ html[dir=rtl] .about-title{
 .news-header {
     text-align: center;
     text-transform: capitalize;
-    font-family: "ibmSemiBold";
+    font-weight: 600;
     font-size: 30px;
     color: #000;
     margin: 0;
@@ -517,7 +515,7 @@ html[dir=rtl] .about-title{
     left: -100%;
     width: 100%;
     height: 100%;
-    background-color: #7e2729;
+    background-color: #7e2729e6;
     z-index: 2;
     transition: all .3s ease-in-out;
 }
@@ -697,7 +695,7 @@ html[dir=rtl] .social-link:last-of-type {
 /*                    menu in phone size                      */
 .menu-bars {
     margin-right: 5px;
-    font-size: 24px;
+    font-size: 18px;
     color: #000;
     display: none;
     transition: .3s;
@@ -705,55 +703,23 @@ html[dir=rtl] .social-link:last-of-type {
 
 @media (max-width: 1199px){
     .lang-section{
-        display: none;
-    }
-    .lang-section.hide-big{
-        display: block;
-        text-align: start;
-        padding-inline-start: 20px;
-    }
-    .lang-section.hide-big .lang-word{
-        font-size: 17.5px;
-        font-weight: 500;
-        color: #424242;
-    }
-    .lang-section.hide-big img{
-        display: none;
-    }
-    .navgition .dropdown-content {
-        background-color: transparent;
-        text-align: center;
-        position: relative;
-        min-width: 100%;
-        padding: 10px 15px;
-        box-shadow: none;
-        opacity: 1;
-        visibility: visible;
+        margin-inline-end: 15px;
     }
     .show-icons{
         display: block;
     }
-    .navgition .dropdown-content{
-        display: none;
-        transition: none;
-    }
     .nav-header figure{
-        width: 100px;
+        width: 80px;
     }
     .nav-header{
-        padding: 20px 0 18px;
-    }
-    .add-to .dropdown-content{
-        left: 10%;
+        padding: 15px 0 18px;
     }
     .menu-bars {
         display: block;
-        margin-right: 8px;
         font-size: 18px;
+        font-weight: 400;
         color: #000;
         transition: all 0.3s ease-in-out;
-        font-size: 24px;
-        margin-inline-end: 26px;
     }
     .menu-bars:hover{
         color: #7e2729;
@@ -833,39 +799,6 @@ html[dir=rtl] .social-link:last-of-type {
     .nav-header li a{
         display: flex;
         align-items: center;
-    }
-    .big-menu .dropdown-content {
-        background-color: transparent;
-        text-align: center;
-        position: relative;
-        min-width: 100%;
-        padding: 10px 15px;
-        box-shadow: none;
-        opacity: 1;
-        visibility: visible;
-    }
-    .dropdown-content::before{
-        display: none;
-    }
-    .header-info .lang-section{
-        display: none;
-    }
-    .big-menu .lang-section{
-        display: block;
-        transition: all 0.3s ease-in-out;
-    }
-    .dropdown{/*to make flex work*/
-        display: block;
-    }
-    .big-menu .lang-section img{
-        display: none;
-    }
-    .dropdown-content{
-        top: 0;
-    }
-    .dropdown-content a{
-        color: #424242;
-        text-align: start;
     }
     .top-header .add-to:first-of-type{
         margin: 0;

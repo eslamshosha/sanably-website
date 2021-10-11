@@ -15,13 +15,13 @@ $(document).ready(function() {
            $("body").removeClass("overflow");
        });
 
-	   //dropdown inside menu
-	   $('.cat-li.dropdown .cat-anchor, .lang-word, .navgition .dropdown>a').click(function (e) {
-		e.preventDefault()
-		var item =  $(this).siblings(".dropdown-content");
-		item.slideToggle(500);
+	//    //dropdown inside menu
+	//    $('.cat-li.dropdown .cat-anchor, .lang-word, .navgition .dropdown>a').click(function (e) {
+	// 	e.preventDefault()
+	// 	var item =  $(this).siblings(".dropdown-content");
+	// 	item.slideToggle(500);
 		
-		})
+	// 	})
    	}
 
        // //main Slider Carousel
