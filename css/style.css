@@ -693,17 +693,16 @@ html[dir=rtl] .social-link:last-of-type {
 
 /*                                    media query                                    */
 /*                    menu in phone size                      */
-.menu-bars {
-    margin-right: 5px;
-    font-size: 18px;
-    color: #000;
-    display: none;
-    transition: .3s;
-}
+
 
 @media (max-width: 1199px){
     .lang-section{
         margin-inline-end: 15px;
+        display: flex;
+        align-items: center;
+    }
+    .lang-section img{
+        margin-inline-end: 5px;
     }
     .show-icons{
         display: block;
@@ -715,11 +714,17 @@ html[dir=rtl] .social-link:last-of-type {
         padding: 15px 0 18px;
     }
     .menu-bars {
-        display: block;
-        font-size: 18px;
-        font-weight: 400;
+        font-size: 16px;
+        color: #000;
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+        font-weight: 700;
         color: #000;
         transition: all 0.3s ease-in-out;
+    }
+    .menu-bars i{
+        margin-inline-end: 5px;
     }
     .menu-bars:hover{
         color: #7e2729;
@@ -821,7 +826,6 @@ html[dir=rtl] .social-link:last-of-type {
     /*                           category-section                        */
     .category-cont {
         grid-template-columns: repeat(4, 1fr);
-        gap: 15px;
     }
     /*                           category-section                        */
     /*                           about-section                        */
@@ -852,8 +856,8 @@ html[dir=rtl] .social-link:last-of-type {
     .outer-img{
         display: none;
     }
-    .about-box .about-btn{
-        margin-bottom: 30px;
+    .about-section{
+        margin-bottom: 50px;
     }
     /*                           about-section                        */
 
@@ -861,7 +865,7 @@ html[dir=rtl] .social-link:last-of-type {
     @media (max-width: 767px){
         .category-cont {
             grid-template-columns: repeat(2, 1fr);
-            gap: 15px;
+            gap: 25px 15px;
         }
         .nav-foot{
             flex-direction: column;
@@ -872,7 +876,17 @@ html[dir=rtl] .social-link:last-of-type {
             margin-bottom: 8px;
         }
         .news-content {
-            padding: 0 30px 30px;
+            padding: 0 15px 30px;
+        }
+        .news-content .news-date{
+            margin-bottom: 15px;
+        }
+        .news-content .news-head{
+            margin-bottom: 15px;
+        }
+        .copy-right,
+        .design-text{
+            font-size: 12px;
         }
     }
     @media (max-width: 992px){
