@@ -892,6 +892,13 @@ html[dir=rtl] .social-link:last-of-type {
     @media (max-width: 992px){
         .news-cont{
             flex-direction: column;
+            padding: 0 15px;
+        }
+        .news-box{
+            margin-bottom: 15px;
+        }
+        .news-box:last-of-type{
+            margin-bottom: 0;
         }
         .news-img a{
             padding-top: 80%;
